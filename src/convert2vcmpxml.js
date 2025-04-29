@@ -84,7 +84,7 @@ if(in_path && fs.statSync(in_path).isDirectory())
 		{
 			// https://nodejs.org/api/fs.html#direntparentpath
 			// min: v18.20.0
-			const fullpath = is_recursive ? path.join(path.dirname(in_path), file.parentPath, file.name) : path.join(in_path, file.name);
+			const fullpath = is_recursive ? path.join(file.parentPath, file.name) : path.join(in_path, file.name);
 			if(is_checked && file.name.endsWith('dff')) dff_file_set.add(file.name);
 			else if(file.name.endsWith('col')) col_file_list.push(fullpath);
 			else if(file.name.endsWith('ide')) ide_file_list.push(fullpath);
