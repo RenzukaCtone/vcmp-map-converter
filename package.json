@@ -1,12 +1,12 @@
 {
   "name": "vcmp-map-converter",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "RenzukaCtone",
-  "license": "ISC",
-  "description": "",
+  "license": "GPL-2.0",
+  "description": "GTA Vice City / VCMP map definition data, convert to to each other.",
   "dependencies": {
     "fast-xml-parser": "^5.2.0"
   }
